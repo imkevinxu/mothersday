@@ -16,7 +16,7 @@ def app(request, phone):
 def create(request):
     if request.method == 'POST':
         try:
-            card = Card.objects.get(phone=request.POST["phone"])
+            card = Card.objects.get(phone=''.join(c for c in request.POST["phone"] if c.isdigit()))
             if request.POST["name"]:
                 card.name = request.POST["name"]
                 card.save()
