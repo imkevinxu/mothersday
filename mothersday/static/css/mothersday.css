@@ -1,1 +1,217 @@
 /*! project specific CSS goes here. */
+
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:500,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+
+body {
+    background-image: url(../img/lightpaperfibers.png);
+}
+
+.title-bar {
+    font-family: 'Advent Pro', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.title-bar i {
+    color: #F91E44;
+    font-size: 0.8em;
+}
+
+.row-cards {
+    position: relative;
+    display: block;
+    width: 290px;
+    height: 290px;
+    margin: 0 auto;
+}
+
+.card {
+    position: absolute;
+    display: block;
+    overflow-y: scroll;
+    width: 290px;
+    height: 290px;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.card-question p {
+    font-family: 'Advent Pro', serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.card-text p {
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 300;
+    font-size: 24px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.card-long-mask {
+    position: absolute;
+    display: block;
+    width: 290px;
+    height: 40px;
+    bottom: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+}
+
+.card-long p {
+    font-size: 18px;
+    overflow-y:scroll;
+    top: 0;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.card-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.row-heart {
+    margin-top: 15px;
+}
+
+.heart-button-wrapper {
+    display: block;
+    width: 77px;
+    height: 77px;
+    margin: 0 auto;
+}
+
+#heart-button {
+    display: block;
+    width: 77px;
+    height: 77px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+#heart-button i {
+    position: absolute;
+    left: 50%;
+    margin-left: -21px;
+    margin-top: 18px;
+    color: #F91E44;
+}
+
+.button-3d {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3f3f3), color-stop(100%, #e9e9e9));
+    background: -webkit-linear-gradient(top, #f3f3f3, #e9e9e9);
+    background: -moz-linear-gradient(top, #f3f3f3, #e9e9e9);
+    background: -o-linear-gradient(top, #f3f3f3, #e9e9e9);
+    background: linear-gradient(top, #f3f3f3, #e9e9e9);
+    background-color: #eeeeee;
+    color: #666666;
+    border: 1px solid #e1e1e1;
+    text-shadow: none;
+    position: relative;
+    top: 0px;
+}
+
+.button-3d:hover {
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+    background: -webkit-linear-gradient(#ffffff, #ebebeb);
+    background: -moz-linear-gradient(#ffffff, #ebebeb);
+    background: -o-linear-gradient(#ffffff, #ebebeb);
+    background: linear-gradient(#ffffff, #ebebeb);
+    background-color: white;
+}
+
+.button-3d:active {
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9e9), color-stop(100%, #f3f3f3));
+    background: -webkit-linear-gradient(top, #e9e9e9, #f3f3f3);
+    background: -moz-linear-gradient(top, #e9e9e9, #f3f3f3);
+    background: -o-linear-gradient(top, #e9e9e9, #f3f3f3);
+    background: linear-gradient(top, #e9e9e9, #f3f3f3);
+    background-color: #eeeeee;
+    color: #bbbbbb;
+    border: 1px solid #e1e1e1;
+    top: 5px;
+}
+
+
+
+
+
+.row-progress {
+    margin-top: 25px;
+}
+
+#progress {
+    display: block;
+    width: 100%;
+    height: 16px;
+    border-radius: 16px;
+    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+    -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+    background: #eeeeee;
+    border: 1px solid #e1e1e1;
+}
+
+#marker {
+    display: block;
+    position: relative;
+    width: 0;
+    height: 16px;
+    border-radius: 16px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #F91E44), color-stop(100%, #E21B3E));
+    background: -webkit-linear-gradient(top, #F91E44, #E21B3E);
+    background: -moz-linear-gradient(top, #F91E44, #E21B3E);
+    background: -o-linear-gradient(top, #F91E44, #E21B3E);
+    background: linear-gradient(top, #F91E44, #E21B3E);
+    background-color: #e54028;
+    border: 1px solid #c22d18;
+    margin-top: -1px;
+}
+
+.marker-head-wrapper {
+    position: absolute;
+    right: -16px;
+}
+
+.marker-head-wrapper i {
+    color: #F91E44;
+    margin-top: -6px;
+    z-index: 99;
+    text-shadow: 0px 1px 0px #c22d18;
+}
