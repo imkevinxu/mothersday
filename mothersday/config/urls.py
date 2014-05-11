@@ -9,7 +9,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='base.html')),
-    url(r'^app$', TemplateView.as_view(template_name='app.html')),
+    url(r'^app/$', TemplateView.as_view(template_name='app.html')),
+    url(r'^create/$', 'card.views.create', name='create'),
+    url(r'^mothersday/(?P<phone>\d+)/$', 'card.views.app', name='app'),
 
     # Examples:
     # url(r'^$', 'mothersday.views.home', name='home'),
