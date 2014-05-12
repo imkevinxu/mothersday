@@ -5,6 +5,8 @@ from .models import Card
 
 def app(request, phone):
     if phone:
+        if phone == "zhang":
+            return render(request, "zhang.html")
         try:
             card = Card.objects.get(phone=str(phone))
             return render(request, "app.html", {"card": card})
